@@ -49,6 +49,7 @@ body {
   color: #0099cc;
   background: #f2f2f2;
 }
+
 #menu input {
   display: none;
   margin: 0;
@@ -149,7 +150,7 @@ section {
     center center/cover no-repeat local;
 }
 .container {
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -164,4 +165,15 @@ section {
   border-radius: 30px;
   background: #e0e0e0;
   box-shadow: 15px 15px 15px #bebebe, -5px -5px 15px #ffffff;
+}
+
+.avatar {
+  border-radius: 30px;
+  width: 290px;
+  height: 354px;
+}
+.kit {
+  text-align: center;
+  color: #001a57;
+  font-size: 20px;
 }
