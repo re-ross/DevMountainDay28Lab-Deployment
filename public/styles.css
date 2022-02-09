@@ -1,9 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: linear-gradient(119deg, #7b9e89 0%, #fff 100%);
+  background-color: #e4eaec;
   min-height: 100vh;
 }
-header {
-  border: 3px solid #000;
+
+#logo {
+  height: 45px;
+}
+
+#menu {
+  background: #001a57;
+  color: #fff;
+  height: 45px;
+  padding-left: 18px;
+  /* border-radius: 10px; */
+}
+#menu ul,
+#menu li {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+#menu ul {
+  width: 100%;
+}
+#menu li {
+  float: left;
+  display: inline;
+  position: relative;
+}
+#menu a {
+  display: block;
+  line-height: 45px;
+  padding: 0 14px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+#menu a.dropdown-arrow:after {
+  content: "\25BE";
+  margin-left: 5px;
+}
+#menu li a:hover {
+  color: #0099cc;
+  background: #f2f2f2;
+}
+#menu input {
+  display: none;
+  margin: 0;
+  padding: 0;
+  height: 45px;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+#menu label {
+  display: none;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  left: 35px;
+}
+#menu label:before {
+  font-size: 1.6em;
+  content: "\2261";
+  margin-left: 20px;
+}
+#menu ul.sub-menus {
+  height: auto;
+  overflow: hidden;
+  width: 170px;
+  background: #444444;
+  position: absolute;
+  z-index: 99;
+  display: none;
+}
+#menu ul.sub-menus li {
+  display: block;
+  width: 100%;
+}
+#menu ul.sub-menus a {
+  color: #ffffff;
+  font-size: 16px;
+}
+#menu li:hover ul.sub-menus {
+  display: block;
+}
+#menu ul.sub-menus a:hover {
+  background: #f2f2f2;
+  color: #444444;
+}
+@media screen and (max-width: 800px) {
+  #menu {
+    position: relative;
+  }
+  #menu ul {
+    background: #111;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    height: auto;
+    display: none;
+  }
+  #menu ul.sub-menus {
+    width: 100%;
+    position: static;
+  }
+  #menu ul.sub-menus a {
+    padding-left: 30px;
+  }
+  #menu li {
+    display: block;
+    float: none;
+    width: auto;
+  }
+  #menu input,
+  #menu label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  #menu input {
+    z-index: 4;
+  }
+  #menu input:checked + label {
+    color: white;
+  }
+  #menu input:checked + label:before {
+    content: "\00d7";
+  }
+  #menu input:checked ~ ul {
+    display: block;
+  }
+}
+
+section {
+  height: 50vh;
+  margin-top: 5px;
+  background: #fff
+    url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Tottenham_Hotspur_Stadium_South_Stand.jpg/2560px-Tottenham_Hotspur_Stadium_South_Stand.jpg)
+    center center/cover no-repeat local;
+}
+.container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  align-content: normal;
+}
+.card {
+  display: block;
+  width: 290px;
+  height: 354px;
+  align-self: auto;
   border-radius: 30px;
-  background-color: F0A202;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 15px #bebebe, -5px -5px 15px #ffffff;
 }

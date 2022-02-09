@@ -6,11 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <title>Deployment Lab</title>
-    <header>test</header>
   </head>
+  <header>
+    <nav id="menu">
+      <input
+        type="checkbox"
+        id="responsive-menu"
+        onclick="updatemenu()"
+      /><label></label>
+      <ul>
+        <li><img id="logo" src="./logo2.jpeg" /></li>
+        <li>
+          <a class="dropdown-arrow" href="http://">Products</a>
+          <ul class="sub-menus">
+            <li><a href="http://">Products Sub Menu 1</a></li>
+            <li><a href="http://">Products Sub Menu 2</a></li>
+            <li><a href="http://">Products Sub Menu 3</a></li>
+            <li><a href="http://">Products Sub Menu 4</a></li>
+          </ul>
+        </li>
+        <li><a href="http://">About</a></li>
+        <li>
+          <a class="dropdown-arrow" href="http://">Services</a>
+          <ul class="sub-menus">
+            <li><a href="http://">Services Sub Menu 1</a></li>
+            <li><a href="http://">Services Sub Menu 2</a></li>
+            <li><a href="http://">Services Sub Menu 3</a></li>
+          </ul>
+        </li>
+        <li><a href="http://">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
   <body>
-    <h1>howdy y'all</h1>
-    <p>lorem ipsum dolor sit amet, consectetur</p>
+    <section></section>
+    <div class="container">
+      <div class="card">
+        <img src="img_avatar.png" alt="Avatar" style="width: 100%" />
+        <div class="kit">
+          <h4><b>Harry Kane</b></h4>
+          <p>#10</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./son.jpeg" alt="Avatar" style="width: 100%" />
+        <div class="kit">
+          <h4><b>Son</b></h4>
+          <p>#7</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img_avatar.png" alt="Avatar" style="width: 100%" />
+        <div class="kit">
+          <h4><b>Lucas</b></h4>
+          <p>#27</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img_avatar.png" alt="Avatar" style="width: 100%" />
+        <div class="kit">
+          <h4><b>Bentancur</b></h4>
+          <p>30</p>
+        </div>
+      </div>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>
