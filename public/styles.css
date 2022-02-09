@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(119deg, #7b9e89 0%, #fff 100%);
+  min-height: 100vh;
 }
 header {
   border: 3px solid #000;
