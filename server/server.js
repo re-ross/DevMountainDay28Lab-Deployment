@@ -1,4 +1,4 @@
-const exports = require("express");
+const express = require("express");
 const cors = require("cors");
 const app = express();
 const path = require("path");
